@@ -9,7 +9,7 @@ export default class Chat {
     this.messageInput = document.querySelector('.message_input');
     this.messageArea = document.querySelector('.messages-area');
     this.sendMessageForm = document.querySelector('.send_message_form');
-    this.ws = new WebSocket('ws://my-first-project-00ua.onrender.com');
+    this.ws = new WebSocket('wss://my-first-project-00ua.onrender.com');
     this.clientNick;
     this.usersOnline;
     this._wsMessageHandler();
